@@ -1,10 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Facebook from './components/Facebook';
 
 function App(props) {
   return (
     <Routes>
-      <Route path='/' element={<div>hii everyone</div>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/facebook' element={<Facebook/>}/>
     </Routes>
   );
 }
